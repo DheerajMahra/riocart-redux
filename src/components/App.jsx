@@ -127,7 +127,7 @@ export default class App extends React.Component{
                 <Switch>
 
                     <Route
-                        exact path="/"
+                        exact path="/riocart"
                         render={ props => 
                             <ProductList
                                 {...props}
