@@ -18,7 +18,7 @@ const NavBar = props => {
       <Navbar color="light shadow" light fixed="top">
       <Container>
 
-        <Link to="/riocart">
+        <Link to="/">
           <NavbarBrand 
             className="d-flex justify-content-center align-items-center">
               <ion-icon name="logo-react" style={{fontSize: "24px", marginRight: "5px"}}></ion-icon>
