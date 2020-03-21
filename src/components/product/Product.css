@@ -1,0 +1,20 @@
+.pd-link{
+    text-decoration: none;
+    color: inherit;
+    transition: .3s ease-in-out;
+}
+
+.pd-link:focus, .pd-link:hover, .pd-link:visited, .pd-link:link, .pd-link:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pd-link:hover{
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 767px){
+    .product-img{
+      margin-bottom: 1rem;
+    }
+} 

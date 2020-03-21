@@ -1,0 +1,26 @@
+.myBtn{
+    display: inline-block;
+    background: #fb641c;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 8px 6px rgba(0,0,0,.1);
+    margin-right: 10px;
+    text-transform: uppercase;
+    padding: 18px 50px;
+    transition: .3s ease-in-out;
+    cursor:pointer;
+}
+
+.myBtn:hover{
+    text-decoration: none;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    color:#fff;
+}
+
+@media screen and (max-width: 410px){
+    .myBtn{
+        font-size: 14px;
+        padding: 12px 30px;
+    }
+}
+  
