@@ -1,0 +1,14 @@
+.wl-link{
+    text-decoration: none;
+    color: inherit;
+    transition: .3s ease-in-out;
+}
+
+.wl-link:focus, .wl-link:hover, .wl-link:visited, .wl-link:link, .wl-link:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wl-link:hover{
+    transform: translateY(-3px);
+}

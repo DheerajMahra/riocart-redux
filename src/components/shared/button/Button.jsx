@@ -1,13 +1,13 @@
 import React from 'react'
 import './Button.css'
 
-export default function Button(props) {
-    return (
-        <span
-        className="myBtn"
-        onClick={() => { if(!props.event){ return } props.event()}
-        }>
-        {props.text}
-        </span>
-    )
-}
+const  Button = props => (
+    <span
+    className={ props.secondary ? "btn--secondary" : "btn--primary" }
+    onClick={() => { if(!props.event){ return } props.event()}}
+    >
+    {props.children}
+    </span>
+)
+
+export default Button

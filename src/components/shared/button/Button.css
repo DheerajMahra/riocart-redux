@@ -1,26 +1,36 @@
-.myBtn{
-    display: inline-block;
+.btn-container {
+    display: flex;
+}
+
+.btn-container span:first-child {
+    margin-right: 1rem;
+}
+
+.btn--primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background: #fb641c;
-    color: #fff;
-    border-radius: 2px;
-    box-shadow: 0px 8px 6px rgba(0,0,0,.1);
-    margin-right: 10px;
-    text-transform: uppercase;
     padding: 18px 50px;
-    transition: .3s ease-in-out;
-    cursor:pointer;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.myBtn:hover{
-    text-decoration: none;
-    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
-    color:#fff;
+.btn--secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .09);
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 410px){
-    .myBtn{
-        font-size: 14px;
-        padding: 12px 30px;
+@media screen and (max-width: 767px){
+    .btn-container{
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
 }
-  

@@ -1,48 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Counter.css'
 
-export class Counter extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            value: this.props.quantity
-        }
-    }
+const Counter = props => {
 
-    handleIncrement = () => {
-        this.setState(prevState => ({
-            value: prevState.value + 1
-        }), function(){
-            this.props.updateQuantity(this.state.value)
-        })
-    }
+    const { quantity, incrementQuantity, decrementQuantity } = props
 
-    handleDecrement = () => {
-        if(this.state.value <= 1) return 
-
-        this.setState(prevState => ({
-            value: prevState.value - 1
-        }), function(){
-            this.props.updateQuantity(this.state.value)
-        })
-    }
-
-    render() {
-        return (
-            <div className="counter">
-                <input
-                    type="number"
-                    className="counter-value"
-                    value={this.state.value}
-                    min="1"
-                    readOnly
-                >
-                </input>
-                <span className="counter-dec" onClick={() => this.handleDecrement()}>_</span>
-                <span className="counter-inc" onClick={() => this.handleIncrement()}>+</span>
-            </div>
-        )
-    }
+    return(
+        <div className="counter">
+            <input
+                type="number"
+                className="counter__value"
+                value={quantity}
+                readOnly
+            ></input>
+            <span className="counter__dec" onClick={decrementQuantity}>_</span>
+            <span className="counter__inc" onClick={incrementQuantity}>+</span>
+        </div>
+    )
 }
 
 export default Counter
