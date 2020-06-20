@@ -34,7 +34,7 @@ class Checkout extends React.Component {
                     <Button>Shop More</Button>
                 </Link>
 
-                <h4 className="lead text-muted font-italic my-4">While we're making your products ready, you can star this project on Github.</h4>
+                <h4 className="lead text-muted font-italic my-4">While we're making your products ready, you can star this <a href="https://github.com/DheerajMahra/riocart-redux" target="_blank">project</a> on Github.</h4>
             </Col>
 
             </Row>
